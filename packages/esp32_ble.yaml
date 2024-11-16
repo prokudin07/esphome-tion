@@ -17,7 +17,7 @@ esp32_ble_tracker:
   id: tion_esp32_ble_tracker
 
 ble_client:
-  - mac_address: $tion_mac_address
+  - mac_address: lambda: id(tion_mac_address).state;
     id: tion_ble_client
 
 ota:
